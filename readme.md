@@ -69,20 +69,14 @@ cd portfolio
 
 2. Install dependencies
 bash
-Copy
-Edit
 npm install
 3. Run the development server
 bash
-Copy
-Edit
 npm run dev
 Open http://localhost:3000 to see the site.
 
 🔧 Build & Export (Static Deployment)
 bash
-Copy
-Edit
 npm run build
 npm run export
 Then deploy the out/ directory via Vercel, Netlify, GitHub Pages, etc.
