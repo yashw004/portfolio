@@ -1,15 +1,22 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  //output: 'export',
+  output: 'export', // Required for next export (GitHub Pages)
+
+  basePath: '/portfolio',         // ✅ GitHub repo name
+  assetPrefix: '/portfolio/',     // ✅ Required for static asset paths
+
   eslint: {
     ignoreDuringBuilds: true,
   },
-  images: { unoptimized: true },
-  // Enable compression
-  compress: true,
-  // Optimize fonts
-  optimizeFonts: true,
-  // Add security headers
+
+  images: {
+    unoptimized: true,            // ✅ Required for next export
+  },
+
+  compress: true,                 // ✅ Enable gzip compression
+  optimizeFonts: true,           // ✅ Font optimization
+
+  // ✅ Custom security headers
   async headers() {
     return [
       {
