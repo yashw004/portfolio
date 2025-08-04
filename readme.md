@@ -37,7 +37,7 @@
 
 ## 📁 Project Structure
 
-```bash
+```
 project-root/
 ├── app/                # App router (Next.js 13+)
 │   └── page.tsx        # Home page
@@ -53,7 +53,7 @@ project-root/
 ├── tailwind.config.js  # Tailwind CSS configuration
 ├── tsconfig.json       # TypeScript configuration
 └── package.json        # Project metadata and scripts
-
+```
 🚀 Getting Started
 1. Clone the Repository
 git clone https://github.com/yourusername/portfolio.git
